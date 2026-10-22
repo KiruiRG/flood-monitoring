@@ -9,6 +9,7 @@ CREATE TABLE IF NOT EXISTS users (
  role ENUM('citizen','county_officer','admin') NOT NULL DEFAULT 'citizen',
  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+
 CREATE TABLE IF NOT EXISTS predictions (
  id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
  location_name VARCHAR(160) NOT NULL,
