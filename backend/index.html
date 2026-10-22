@@ -1,1 +1,53 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Flood Monitoring Dashboard</title><link rel="stylesheet" href="style.css"></head><body><header><h1>Flood Monitoring Dashboard</h1><p>Garissa · Lower Tana · County review</p></header><main><p class="warning">Prototype: demo predictions are not live flood warnings.</p><section class="panel"><h2>County officer sign-in</h2><input id="email" value="county.demo@example.test" aria-label="Email"><input id="password" type="password" value="ChangeMe123!" aria-label="Password"><button id="login">Sign in</button><button id="refresh">Refresh</button><p id="message">Loading public data…</p></section><section class="panel"><h2>Latest predictions</h2><div id="predictions"></div></section><section class="panel"><h2>Alerts</h2><div id="alerts"></div></section><section class="panel"><h2>Incident reports</h2><div id="incidents">Sign in to view reports.</div></section><section class="panel"><h2>Response coordination</h2><form id="coord"><input name="incident_id" type="number" placeholder="Incident ID (optional)"><input name="agency_name" required placeholder="Agency / organization"><select name="status"><option>PLANNED</option><option>CONTACTED</option><option>STANDBY</option><option>COMPLETED</option></select><textarea name="action_note" required placeholder="Action note"></textarea><button>Save record</button></form><div id="coordination"></div></section></main><script src="app.js"></script></body></html>
+<!doctype html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <title>Flood Monitoring Dashboard</title>
+      <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <body>
+      <header>
+        <h1>Flood Monitoring Dashboard</h1>
+        <p>Garissa · Lower Tana · County review</p>
+      </header>
+      <main>
+        <p class="warning">Prototype: demo predictions are not live flood warnings.</p>
+        <section class="panel"><h2>County officer sign-in</h2><input id="email" value="county.demo@example.test" aria-label="Email">
+          <input id="password" type="password" value="ChangeMe123!" aria-label="Password">
+          <button id="login">Sign in</button>
+          <button id="refresh">Refresh</button>
+          <p id="message">Loading public data…</p>
+        </section>
+        <section class="panel">
+          <h2>Latest predictions</h2>
+          <div id="predictions"></div>
+        </section><section class="panel">
+          <h2>Alerts</h2>
+          <div id="alerts"></div>
+        </section>
+        <section class="panel">
+          <h2>Incident reports</h2>
+          <div id="incidents">Sign in to view reports.</div>
+        </section>
+        <section class="panel"> 
+          <h2>Response coordination</h2>
+          <form id="coord">
+            <input name="incident_id" type="number" placeholder="Incident ID (optional)">
+            <input name="agency_name" required placeholder="Agency / organization">
+            <select name="status">
+              <option>PLANNED</option>
+              <option>CONTACTED</option>
+              <option>STANDBY</option>
+              <option>COMPLETED</option>
+            </select>
+            <textarea name="action_note" required placeholder="Action note"></textarea>
+            <button>Save record</button>
+          </form>
+          <div id="coordination"></div>
+        </section>
+      </main>
+      <script src="app.js"></script>
+    </body>
+  </html>
